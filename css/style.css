@@ -1,0 +1,404 @@
+@font-face {
+  font-family: Montserrat-ExtraLight;
+  src: local(Montserrat), url(../fonts/Montserrat-ExtraLight.ttf);
+}
+
+
+@font-face {
+  font-family: Montserrat;
+  src: local(Montserrat), url(../fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: Raleway;
+  src: local(Raleway), url(../fonts/Raleway-Regular.ttf);
+}
+
+@font-face {
+  font-family: Raleway-ExtraBold;
+  src: local(Raleway), url(../fonts/Raleway-ExtraBold.ttf);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  width: 1920px;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  background: #555556 url(../img/photo.jpg) no-repeat;
+  background-size: 100%;
+}
+
+.slider,
+.services {
+  display: flex;
+  justify-content: space-between;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.logo_menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  height: 100%;
+}
+
+.logo_name {
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  color: #fff;
+  margin: auto;
+}
+
+.header_menu {
+  display: flex;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.menu_link {
+  margin: auto 15px;
+  color: #fff;
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+}
+
+.menu_text {
+  display: block;
+  width: 100%;
+  margin: 10px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.menu_text:hover {
+  color: #c7b299;
+}
+
+.menu_text:active {
+  color: #ffffff;
+}
+
+.menu__icon {
+  margin-left: 30px;
+}
+
+.icon {
+  display: flex;
+}
+
+.icon_link {
+  display: flex;
+}
+
+.icon_link:hover .icon_img {
+  opacity: 0.5;
+}
+
+.icon_link:active .icon_img {
+  opacity: 1;
+}
+
+.icon_img {
+  margin: auto 15px;
+}
+
+.m_cart_img {
+  margin-left: 60px;
+}
+
+.slider_container {
+  position: relative;
+}
+
+.slider_text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  padding: 220px 150px;
+}
+
+.slider_left,
+.slider_right {
+  padding-top: 80px;
+}
+
+.slider_content {
+  text-align: center;
+}
+
+.slider_design {
+  color: #ffffff;
+  font-family: Raleway, sans-serif;
+  font-size: 36px;
+}
+
+.slider_portfolio {
+  width: 590px;
+  color: #ffffff;
+  font-family: Raleway-ExtraBold, sans-serif;
+  font-size: 52px;
+  font-weight: 800;
+}
+
+.slider_p {
+  width: 560px;
+  color: #ffffff;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  width: 562px;
+  line-height: 24px;
+  padding-bottom: 70px;
+}
+
+
+.button_getStarted {
+  border-radius: 3px;
+  border: 1px solid transparent;
+  background-color: #998675;
+  color: #ffffff;
+  font-family: Raleway-ExtraBold, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 23px;
+  text-transform: uppercase;
+  padding: 20px 40px;
+}
+
+.button_getStarted:hover {
+  background: none;
+  border: #998675 1px solid;
+}
+
+.button_getStarted:active {
+  background-color: #998675;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 40px;
+  min-height: 60px;
+}
+
+.pagination_link {
+  display: flex;
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  border-radius: 50%;
+}
+
+.pagination_link:hover {
+  border: 2px solid #d3c1ad;
+}
+
+.pagination_link:hover .pagination_circle {
+  background: transparent;
+}
+
+.pagination_circle {
+  display: block;
+  min-height: 11px;
+  width: 11px;
+  margin: auto;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.service_Design {
+  display: block;
+  align-items: center;
+  text-align: center;
+  width: 265px;
+}
+
+.services_icon {
+  display: block;
+  margin: 60px auto 30px;
+  width: 50px;
+  height: 50px;
+}
+
+.service_name {
+  color: #555555;
+  font-family: Raleway, sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.service_description {
+  color: #8c8c8c;
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.service_description::after {
+  display: block;
+  content: '';
+  width: 70px;
+  height: 3px;
+  background-color: #8c8c8c;
+  margin: 30px auto 70px;
+}
+
+.realization {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 80px;
+  background-color: #fbfaf8;
+}
+
+.realization_title,
+.projects_title {
+  color: #555555;
+  font-family: Raleway, sans-serif;
+  font-size: 30px;
+  margin-top: 0;
+}
+
+.realization_text,
+.projects_text {
+  width: 750px;
+  margin-bottom: 40px;
+  color: #8c8c8c;
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+}
+
+
+.realization_screens {
+  width: 1170px;
+  height: 480px;
+  /* margin-top: 40px; */
+  background-repeat: no-repeat;
+  background-image: url(../img/browser-center.jpg), url(../img/browser-left.jpg), url(../img/browser-right.jpg);
+  background-position: bottom, bottom left, bottom right;
+}
+
+.wordpress_theme {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+  background: rgb(33, 27, 25);
+  background: linear-gradient(90deg, rgba(33, 27, 25, 1) 0%, rgba(76, 51, 38, 1) 100%);
+}
+
+.wordpress_theme_text {
+  padding: 50px 0 50px 400px;
+}
+
+.wordpress_themeTitle {
+  margin: 0 0 10px 0;
+  color: #ffffff;
+  font-family: Raleway, sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.wordpress_theme_title_waxom {
+  color: #c7b299;
+}
+
+.wordpress_theme-description {
+  color: #615855;
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+}
+
+.wordpress_theme_button {
+  display: block;
+  margin: 50px 400px 0 0;
+  height: 60px;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.projects_buttons {
+  display: flex;
+}
+
+.projects_button {
+  list-style: none;
+}
+
+.projects_link {
+  display: block;
+  margin: 0 5px;
+  padding: 10px 25px;
+  font-family: Montserrat, sans-serif;
+  color: #8c8c8c;
+  font-size: 14px;
+  border: 1px solid #ebebeb;
+  border-radius: 3px;
+}
+
+.projects_link:hover {
+  color: #ffffff;
+  background-color: #998675;
+}
+
+.projects_link:active {
+  color: #8c8c8c;
+  background-color: #fff;
+}
+
+.button_load_more {
+  border-radius: 3px;
+  border: 1px solid transparent;
+  background-color: #998675;
+  color: #ffffff;
+  font-family: Raleway-ExtraBold, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 23px;
+  text-transform: uppercase;
+  padding: 20px 40px;
+  margin: 20px 0 80px 0;
+}
+
+.button_load_more:hover {
+  background: none;
+  border: #998675 1px solid;
+  color: #998675;
+}
+
+.button_load_more:active {
+  background-color: #998675;
+}
