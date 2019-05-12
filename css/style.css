@@ -387,6 +387,14 @@ a {
   margin-top: 40px;
 }
 
+.project:hover .project_img::before {
+  z-index: 1;
+}
+
+.project:hover .project_img::after {
+  z-index: 1;
+}
+
 /*.project_img -непонятно, высота блока 241 px хотя высота изображения 237 поэтому задан костыль в виде высоты. */
 .project_img {
   height: 237px;
@@ -416,7 +424,9 @@ a {
 }
 
 .project:hover .project_view_img {
-  opacity: 0.3;
+  /* opacity: 0.9; */
+  -webkit-filter: brightness(40%);
+  filter: brightness(40%);
 }
 
 .project_text {
@@ -429,7 +439,7 @@ a {
 .project_text::before {
   content: '';
   position: absolute;
-  bottom: 113px;
+  bottom: 112px;
   left: 20px;
   border-bottom: 15px solid #fbfaf8; 
   border-left: 20px solid transparent;
