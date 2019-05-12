@@ -175,7 +175,7 @@ a {
 
 
 .button_getStarted {
-  border-radius: 3px;
+  /* border-radius: 3px; */
   border: 1px solid transparent;
   background-color: #998675;
   color: #ffffff;
@@ -366,7 +366,7 @@ a {
   color: #8c8c8c;
   font-size: 14px;
   border: 1px solid #ebebeb;
-  border-radius: 3px;
+  /* border-radius: 3px; */
 }
 
 .projects_link:hover {
@@ -387,25 +387,21 @@ a {
   margin-top: 40px;
 }
 
-
 /*.project_img -непонятно, высота блока 241 px хотя высота изображения 237 поэтому задан костыль в виде высоты. */
 .project_img {
   height: 237px;
-}
-
-.project {
   position: relative;
 }
 
 .project_img::before {
-  background-image: url(../img/link.svg);
+  background: url(../img/link.svg) no-repeat center center;
   width: 25px;
   height: 25px;
   content: '';
   position: absolute;
   top: 105px;
   left: 145px;
-  z-index: -1;
+  z-index: -2;
 }
 
 .project_img::after {
@@ -416,12 +412,11 @@ a {
     position: absolute;
   top: 105px;
   right: 145px;
-  z-index: -1;
+  z-index: -2;
 }
 
-
 .project:hover .project_view_img {
-  opacity: 0.4;
+  opacity: 0.3;
 }
 
 .project_text {
@@ -467,9 +462,8 @@ a {
   font-weight: 300;
 }
 
-
 .button_load_more {
-  border-radius: 3px;
+  /* border-radius: 3px; */
   border: 1px solid transparent;
   background-color: #998675;
   color: #ffffff;
