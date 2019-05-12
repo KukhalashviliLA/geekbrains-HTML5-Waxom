@@ -379,6 +379,95 @@ a {
   background-color: #fff;
 }
 
+.projects_view {
+  display: flex;
+  width: 1170px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+
+/*.project_img -непонятно, высота блока 241 px хотя высота изображения 237 поэтому задан костыль в виде высоты. */
+.project_img {
+  height: 237px;
+}
+
+.project {
+  position: relative;
+}
+
+.project_img::before {
+  background-image: url(../img/link.svg);
+  width: 25px;
+  height: 25px;
+  content: '';
+  position: absolute;
+  top: 105px;
+  left: 145px;
+  z-index: -1;
+}
+
+.project_img::after {
+  background: url(../img/lupa.svg) no-repeat center center;
+  width: 26px;
+  height: 25px;
+  content: '';
+    position: absolute;
+  top: 105px;
+  right: 145px;
+  z-index: -1;
+}
+
+
+.project:hover .project_view_img {
+  opacity: 0.4;
+}
+
+.project_text {
+  width: 370px;
+  background-color: #fbfaf8;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.project_text::before {
+  content: '';
+  position: absolute;
+  bottom: 113px;
+  left: 20px;
+  border-bottom: 15px solid #fbfaf8; 
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+}
+
+.project:hover .project_text {
+  background-color: #362f2d;
+}
+
+.project:hover .project_text::before  {
+  border-bottom: 15px solid #362f2d;
+}
+
+.project_name {
+  display: block;
+  padding: 30px 0 15px 30px;
+  color: #c7b299;
+  font-family: Raleway, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.project_type {
+  display: block;
+  padding: 0 0 30px 30px;
+  color: #d1d1d1;
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+
 .button_load_more {
   border-radius: 3px;
   border: 1px solid transparent;
@@ -390,7 +479,7 @@ a {
   line-height: 23px;
   text-transform: uppercase;
   padding: 20px 40px;
-  margin: 20px 0 80px 0;
+  margin: 10px 0 80px 0;
 }
 
 .button_load_more:hover {
