@@ -425,8 +425,8 @@ a {
 
 .project:hover .project_view_img {
   /* opacity: 0.9; */
-  -webkit-filter: brightness(40%);
-  filter: brightness(40%);
+  -webkit-filter: brightness(50%);
+  filter: brightness(50%);
 }
 
 .project_text {
