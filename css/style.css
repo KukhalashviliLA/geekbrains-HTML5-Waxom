@@ -994,13 +994,17 @@ video {
 }
 
 .partners_container_link {
-  -webkit-filter: brightness(80%);
-  filter: brightness(80%);
+  -webkit-filter: brightness(70%);
+  filter: brightness(70%);
 }
 
 .partners_container_link:hover {
   transform: scale(1.3);
   filter: none;
+}
+
+.partners_container_link:active {
+  transform: none;
 }
 
 .info {
