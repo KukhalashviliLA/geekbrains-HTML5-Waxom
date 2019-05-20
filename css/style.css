@@ -35,7 +35,8 @@ a {
 .header {
   width: 100%;
   background: #555556 url(../img/photo.jpg) no-repeat;
-  background-size: 100%;
+  min-height: 1024px;
+  
 }
 
 .slider {
