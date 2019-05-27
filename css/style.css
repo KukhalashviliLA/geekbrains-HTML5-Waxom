@@ -1596,11 +1596,8 @@ input[type="checkbox"]:checked~.menu {
     display: block;
   }
   .menu_li {
-    font-size: 26px;
-    padding-bottom: 10px;
-  }
-  .menu_li {
     width: 100%;
+    font-size: 26px;
   }
   .menu_link {
     text-decoration: none;
@@ -1823,6 +1820,7 @@ input[type="checkbox"]:checked~.menu {
     background-size: 125px;
     padding: 25px;
     min-height: 300px;
+    background-position: bottom left 20px;
   }
   .mobile_title, .posts_title {
     font-size: 20px;
@@ -1841,7 +1839,7 @@ input[type="checkbox"]:checked~.menu {
   }
   .mobile_list {
     margin: 0;
-    padding-left: 80px;
+    padding-left: 100px;
   }
   .mobile_list_item_p {
     font-size: 8px;
