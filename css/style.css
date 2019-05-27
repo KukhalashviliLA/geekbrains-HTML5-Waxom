@@ -1592,7 +1592,7 @@ input[type="checkbox"]:checked~.menu {
     transition-delay: .5s;
     list-style: none;
     padding-left: 0;
-    /* margin-top: -200px; */
+    margin-top: 100px;
     display: block;
   }
   .menu_li {
@@ -1828,6 +1828,7 @@ input[type="checkbox"]:checked~.menu {
   }
   .mobile_devices {
     margin-top: 0;
+    width: 100%;
   }
   .mobile_text {
     font-size: 10px;
